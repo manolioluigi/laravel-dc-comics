@@ -1,0 +1,226 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import '~resources/scss/partials/_mixins.scss';
+@import '~resources/scss/partials/_variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 12vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+.active {
+    color: $blue;
+    border-bottom: 3px solid $blue;
+    padding-bottom: 2em;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.height-full {
+    height: 100%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.img-70 {
+    height: 70px;
+}
+
+.img-50 {
+    height: 50px;
+}
+
+.img-maxw-50 {
+    max-width: 50px;
+}
+
+.jumbo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.white {
+    color: $white;
+}
+
+.gray {
+    color: $gray;
+}
+
+.blue {
+    color: $blue;
+}
+
+.darkblue {
+    color: $darkblue;
+}
+
+.darkgray {
+    color: $darkgray;
+}
+
+.black {
+    color: $black;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-darkgray {
+    background-color: $darkgray;
+}
+
+.bg-main {
+    background-color: $black;
+}
+
+.font-12 {
+    font-size: 13px;
+}
+
+.footer-bg {
+    background-image: url("../images/footer-bg.jpg");
+    height: 400px;
+}
+
+.dc-footer-logo {
+    background-image: url("../images/dc-logo-bg.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.transparent-button {
+    color: $white;
+    border: 2px solid $blue;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.blue-tag {
+    background-color: $blue;
+    max-width: fit-content;
+    padding: 10px 15px;
+    position: absolute;
+    top: 95%;
+    left: 15%;
+}
+
+.blue-tag-small {
+    background-color: $blue;
+    max-width: fit-content;
+    padding: 10px 50px;
+}
+
+.comic-thumb {
+    max-width: fit-content;
+    position: absolute;
+    top: 33%;
+    left: 15%;
+    border: 1px solid $white;
+
+    img {
+        width: 150px;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+.comic-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+}
+
+.comic-card span {
+    object-fit: cover;
+    font-size: 15px;
+}
+
+.comic-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blue-bar {
+    background-color: $blue;
+    width: 100%;
+    height: 50px;
+}
+
+.green-bar {
+    background-color: $green;
+    height: 50px;
+    width: 100%;
+    color: rgb(192, 248, 147);
+}
+
+.vertical-line {
+    height: 100%;
+    width: 1px;
+    background-color: rgb(66, 15, 15);
+}
+
+.small-blue-tag {
+    background-color: $lightblue;
+    color: $white;
+    width: 150px;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.half-blue-tag {
+    background-color: $lightblue;
+    color: $white;
+    width: 80px;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
