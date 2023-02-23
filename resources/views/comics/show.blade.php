@@ -46,27 +46,6 @@
                         </div>
 
                         <div class="row width-75 my-5">
-                            <div class="col-6">
-                                <h5 class="darkblue">Talent</h5>
-                                <div class="d-flex flex-column font-12">
-                                    <div class="d-flex justify-content-between">
-                                        <span class="darkgray">Art by</span>
-                                        <p class="blue width-75">
-                                            @foreach ($comic_book['artists'] as $artist)
-                                                {{$artist}}
-                                            @endforeach
-                                        </p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="darkgray">Written by</span>
-                                        <p class="blue width-75">
-                                            @foreach ($comic_book['writers'] as $writer)
-                                                {{$writer}}
-                                            @endforeach
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-6 font-12">
                                 <h5 class="darkblue">Specs</h5>
                                 <div class="d-flex justify-content-between">
