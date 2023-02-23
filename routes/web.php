@@ -14,7 +14,7 @@ use App\Http\Controllers\ComicController as ComicController;
 |
 */
 
-Route::get('/', [ComicController::class, 'index'])->name('Comics');
+Route::get('/', [PageController::class, 'index']);
 
 /*
 Route::get('/', function () {
