@@ -36,13 +36,20 @@
                             <td>{{$comic['price']}}</td>
                             <td>{{$comic['sale_date']}}</td>
                             <td>{{$comic['type']}}</td>
-                            <td>
+                            <td class="d-flex">
                                 <a href="{{route('comics.show', ['comic' => $comic['id']])}}" class="btn btn-info btn-sm btn-square" title="Dettaglio fumetto">
                                     <i class="fas fa-eye"></i>
                                 </a>
-                                <a href="#" class="btn btn-warning btn-sm btn-square" title="Modifica fumetto">
+                                <a href="{{route('comics.edit', ['comic' => $comic['id']])}}" class="btn btn-warning btn-sm btn-square" title="Modifica fumetto">
                                     <i class="fas fa-edit"></i>
                                 </a>
+                                <form action="{{route('comics.destroy', ['comic' => $comic['id']])}}" class="d-inline-block" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-sm btn-square btn-danger" type="submit">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach
